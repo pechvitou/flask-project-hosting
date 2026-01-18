@@ -1,4 +1,4 @@
-# Python
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
@@ -6,11 +6,22 @@ __pycache__/
 *.swp
 
 # Virtual environment
+.venv/
+venv/
+
+# Environment / secrets file
+**/.env
 .env
 
-# IDE files
+# IDE / editor files
 .vscode/
 .idea/
 
-# Database files (if local SQLite)
+# Database files (if using local SQLite)
 *.db
+
+# Archives / backups
+*.zip
+
+# Optional: logs
+*.log

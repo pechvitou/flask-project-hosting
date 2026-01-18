@@ -3,7 +3,7 @@
 {% block title %}{{ product.name }} - Boak's Store{% endblock %}
 
 {% block rightHeader %}
-    <link rel="stylesheet" href="/static/product.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/product.css') }}">
 {% endblock %}
 
 {% block content %}

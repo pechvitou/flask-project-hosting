@@ -4,21 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="/static/template.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/template.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/appbar.css') }}">
     {% block rightHeader %}{% endblock %}
 </head>
 <body>
-<header class="appbar">
-    <h1 class="logo" onclick="window.location.href='/'">
-        Viti's Store
-    </h1>
-    <div>
-        {#        <a href="/" class="home-navigation">Home</a>#}
-    </div>
-    <button class="to-cart-btn" onclick="window.location.href='/cart'">
-        Cart (<span id="cart-count">0</span>)
-    </button>
-</header>
+{% include 'partials/appbar.html' %}
 <div class="container">
     {% block content %}
     {% endblock %}

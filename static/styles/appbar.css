@@ -1,0 +1,96 @@
+.appbar {
+    background-color: white;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    height: 70px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: black;
+    letter-spacing: -0.015em;
+    cursor: pointer;
+    font-family: 'ROOSTER';
+}
+
+.logo span {
+    color: orangered;
+}
+
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation-container h3 {
+    font-size: 1rem;
+    color: #333333;
+    cursor: pointer;
+    position: relative; /* needed for ::after positioning */
+    transition: color 0.3s ease;
+}
+
+.navigation-container h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* thickness of underline */
+    background-color: #000000E6;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navigation-container h3:hover {
+    color: #000000E6;
+}
+
+.navigation-container h3:hover::after {
+    width: 100%; /* full underline width on hover */
+}
+
+.cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.84);
+    border: none;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    filL: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+    background: #000000;
+}
+
+.cart-button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: orangered;
+    position: absolute;
+    top: -2px;
+    right: -8px;
+}

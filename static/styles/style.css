@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+@font-face {
+    font-family: 'SF-Mono-B';
+    src: url('../fonts/SF-Mono-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF-Mono-R';
+    src: url('../fonts/SF-Mono-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ROOSTER';
+    src: url('../fonts/ROOSTER PERSONAL USE.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kantumruy';
+    src: url('../fonts/Kantumruy.ttf') format('truetype');
+}

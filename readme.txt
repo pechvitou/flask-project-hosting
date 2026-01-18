@@ -1,4 +1,4 @@
-git link: https://github.com/PechVitou/su413_flask_api.git
+git link: https://github.com/pechvitou/flask-project-hosting.git
 
 Project: Flask + Postman + MySQL
 
